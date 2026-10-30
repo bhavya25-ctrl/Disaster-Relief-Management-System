@@ -160,7 +160,7 @@ try {
     java.sql.Connection con = java.sql.DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/disaster_relief_db",
             "root",
-            "Poornima");
+            "MYSQL_PASSWORD");
 
     String sql = "SELECT * FROM users WHERE username = ? AND password = ?";
     java.sql.PreparedStatement pst = con.prepareStatement(sql);
